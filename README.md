@@ -1,4 +1,4 @@
-# Layerwise Learned CNN
+Layerwise Learned CNN
 
 This is code associated with the paper https://arxiv.org/abs/1812.11446
 This is a peliminary research code and some more refinements are needed.
