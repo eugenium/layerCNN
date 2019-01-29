@@ -1,8 +1,7 @@
-# Greedy Layerwise CNN
+# Layerwise Learned CNN
 
-This is a peliminary research code.
-
-Code for experiments on greedy supervised layerwise CNNs
+This is code associated with the paper https://arxiv.org/abs/1812.11446
+This is a peliminary research code and some more refinements are needed.
 
 ## Imagenet
 Imagenet experiments for 1-hidden layer use the standalone imagenet_single_layer.py
@@ -50,22 +49,6 @@ python imagenet.py IMAGENER_DIR -j THREADS --arch vgg11_bn --half --dynamic-loss
 
 ```
 
-### Linear Separability
-Linear separability experiments are in linear_separability folder. A notebook is included that produces the plots. to run different settings
-
-
-This will create and train a model, using K non-linearity, F features and the model is stored in checkpoint.
-
-```
-python cifar.py --ncnn 5 --nlin K --feature_size F
-```
-
-This will use the model "filename", to train probes on top of these at layer "j"
-```
-python train_lr.py filename j
-
-```
-
 ### CIFAR experiments
 CIFAR experiments can be reproduced using cifar.py
 
@@ -90,3 +73,6 @@ python cifar.py --ncnn 5 --nlin 0 --feature_size 256
 
 ```
 
+Refactored (similar to imagenet_refactored) to train CIFAR-10 coming soon with some improvements in accuracy. 
+
+Contact: please send questions/comments/issues to eugene.belilovsky@umontreal.ca
