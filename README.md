@@ -15,20 +15,20 @@ To obtain the results for Imagenet
 
 k=3 
 ```
-python IMAGENER_DIR -j THREADS  imagenet.py --ncnn 8 --nlin 2 
+python imagenet.py IMAGENER_DIR -j THREADS  --ncnn 8 --nlin 2 
 
 ```
 
 k=2 
 
 ```
-python IMAGENER_DIR -j THREADS imagenet.py --ncnn 8 --nlin 1 
+python imagenet.py IMAGENER_DIR -j THREADS --ncnn 8 --nlin 1 
 
 ```
 
 k=1 model
 ```
-python IMAGENER_DIR -j THREADS  imagenet_single_layer.py --ncnn 8
+python imagenet_single_layer.py IMAGENER_DIR -j THREADS  --ncnn 8
 
 ```
 ### VGG-11
